@@ -1,0 +1,11 @@
+# Railway project config — build the backend as a Docker service.
+[build]
+builder = "dockerfile"
+root = "backend"
+dockerfile = "backend/Dockerfile"
+
+[deploy]
+healthcheckPath = "/api/health"
+healthcheckTimeout = 100
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 10
