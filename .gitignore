@@ -1,0 +1,23 @@
+# Python / venv
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Local DB / logs
+*.db
+*.sqlite3
+*.log
+cloudflared.log
+uvicorn.log
+uvicorn_watchdog.log
+sportlog.db
+.env
+
+# Node / frontend build artifacts
+frontend/node_modules/
+frontend/.next/
+frontend/.vercel/
+
+# OS
+.DS_Store

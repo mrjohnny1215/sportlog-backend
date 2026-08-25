@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #0b0e14;
+  color: #e6edf3;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* digital scoreboard font feel */
+.tabular {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
+/* LED chips */
+.led-chip {
+  border-radius: 6px;
+  border: 1px solid #232936;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* gauge bar */
+.gauge {
+  height: 10px;
+  border-radius: 999px;
+  background: #1b2230;
+  overflow: hidden;
+  position: relative;
+}
+.gauge > .ai {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #00ff87, #00e5ff);
+}
+.gauge > .user {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #ffd000, #ff8c00);
+  opacity: 0.85;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #232936;
+  border-radius: 8px;
+}
